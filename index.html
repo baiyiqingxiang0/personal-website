@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的作品集</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">作品集</div>
+            <ul class="nav-links">
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#about">关于我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>欢迎来到我的作品展示</h1>
+            <p>这里展示了我的编程学习成果</p>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>我的项目</h2>
+            <div class="project-grid">
+                <!-- 俄罗斯方块项目 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <!-- 使用SVG作为项目预览图 -->
+                        <svg viewBox="0 0 200 200" class="tetris-preview">
+                            <rect x="40" y="40" width="30" height="30" fill="#007AFF"/>
+                            <rect x="70" y="40" width="30" height="30" fill="#007AFF"/>
+                            <rect x="100" y="40" width="30" height="30" fill="#007AFF"/>
+                            <rect x="130" y="40" width="30" height="30" fill="#007AFF"/>
+                            <rect x="70" y="80" width="30" height="30" fill="#FF3B30"/>
+                            <rect x="100" y="80" width="30" height="30" fill="#FF3B30"/>
+                            <rect x="70" y="110" width="30" height="30" fill="#FF3B30"/>
+                            <rect x="40" y="140" width="30" height="30" fill="#4CD964"/>
+                            <rect x="70" y="140" width="30" height="30" fill="#4CD964"/>
+                            <rect x="100" y="140" width="30" height="30" fill="#4CD964"/>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>俄罗斯方块</h3>
+                        <p>使用HTML5 Canvas开发的经典俄罗斯方块游戏，支持难度选择和音效。</p>
+                        <div class="project-links">
+                            <a href="tetris/index.html" class="button">试玩游戏</a>
+                            <a href="https://github.com/yourusername/tetris" class="button secondary">查看代码</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 目标检测项目（预留） -->
+                <div class="project-card coming-soon">
+                    <div class="project-image">
+                        <svg viewBox="0 0 200 200" class="detection-preview">
+                            <rect x="30" y="30" width="140" height="140" fill="none" stroke="#007AFF" stroke-width="2"/>
+                            <rect x="50" y="50" width="60" height="60" fill="none" stroke="#FF3B30" stroke-width="2"/>
+                            <text x="100" y="100" text-anchor="middle" fill="#666">即将推出</text>
+                        </svg>
+                    </div>
+                    <div class="project-info">
+                        <h3>目标检测项目</h3>
+                        <p>正在开发中的目标检测项目，敬请期待...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>关于我</h2>
+            <p>我是一名热爱编程的初学者，正在学习Web开发和人工智能相关技术。这个网站展示了我的学习成果和进步历程。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 我的作品集 | 持续更新中</p>
+    </footer>
+</body>
+</html> 
