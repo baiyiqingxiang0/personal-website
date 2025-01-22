@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI智能检测系统</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- 添加Material Icons字体 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="#4CAF50" stroke-width="3"/>
+                    <path d="M12 20l6 6 12-12" stroke="#4CAF50" stroke-width="3" fill="none"/>
+                </svg>
+                <h1>AI智能检测系统</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="upload-card">
+                <div class="upload-area" id="dropZone">
+                    <i class="material-icons">cloud_upload</i>
+                    <p>拖拽图片到此处或点击上传</p>
+                    <input type="file" id="imageInput" accept="image/*" hidden>
+                </div>
+                
+                <div class="model-select">
+                    <label>选择检测模型：</label>
+                    <div class="model-options">
+                        <label class="model-option">
+                            <input type="radio" name="model" value="PCB" checked>
+                            <span class="radio-custom"></span>
+                            <span class="label-text">PCB缺陷检测</span>
+                        </label>
+                        <label class="model-option">
+                            <input type="radio" name="model" value="Hard_hat">
+                            <span class="radio-custom"></span>
+                            <span class="label-text">安全帽检测</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button id="detectButton" onclick="detectObjects()">
+                    <i class="material-icons">search</i>
+                    开始检测
+                </button>
+            </div>
+
+            <div class="results-container">
+                <div class="image-card">
+                    <h3><i class="material-icons">image</i> 原始图片</h3>
+                    <div class="image-wrapper">
+                        <img id="originalImage" src="" alt="原始图片">
+                    </div>
+                </div>
+                <div class="image-card">
+                    <h3><i class="material-icons">auto_fix_high</i> 检测结果</h3>
+                    <div class="image-wrapper">
+                        <img id="resultImage" src="" alt="检测结果">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html> 
