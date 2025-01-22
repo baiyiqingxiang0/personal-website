@@ -9,6 +9,7 @@
 - 使用HTML5 Canvas开发
 - 支持难度选择和音效
 - 响应式设计
+- 
 
 ### 2. 目标检测项目（开发中）
 - 基于PaddlePaddle框架的实时目标检测系统，支持PCB缺陷和安全帽佩戴检测。
@@ -22,8 +23,10 @@
 ## 如何运行
 
 1. 克隆仓库
-2. 使用本地服务器运行（如 Live Server）
-3. 在浏览器中访问 index.html
+2. 下载paddle模型,放到detection目录下:
+链接: https://pan.baidu.com/s/1QfRz8V2NKK35Uj4GfKuhfw?pwd=dpzb 提取码: dpzb
+3. 安装依赖:pip install -r requirements.txt (建议新建一个虚拟环境)
+4. 在主文件目录下打开终端进入虚拟环境然后运行:xdg-open index.html
 
 ## 更新计划
 - [ ] 添加更多项目展示
